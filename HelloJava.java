@@ -1,6 +1,8 @@
 
 /**
  * HelloJava
+ * @author Bill Tsui
+ * @version 1.0
  */
 public class HelloJava {
 
