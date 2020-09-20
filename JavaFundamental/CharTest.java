@@ -1,3 +1,5 @@
+package JavaFundamental;
+
 public class CharTest {
     public static void main(String[] args) {
         char c1 = 'a';

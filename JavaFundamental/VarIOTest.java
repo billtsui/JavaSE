@@ -1,3 +1,5 @@
+package JavaFundamental;
+
 import java.util.Scanner;
 
 public class VarIOTest {

@@ -1,3 +1,5 @@
+package JavaFundamental;
+
 public class Variable {
     /**
      * 变量的声明方式

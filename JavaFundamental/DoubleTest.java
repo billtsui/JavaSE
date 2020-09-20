@@ -1,3 +1,5 @@
+package JavaFundamental;
+
 public class DoubleTest {
     public static void main(String[] args) {
         float f1 = 3.1415926897f;

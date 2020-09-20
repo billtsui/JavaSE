@@ -1,3 +1,5 @@
+package JavaFundamental;
+
 public class IntTest {
     public static void main(String[] args) {
         byte b1 = 25; // byte能够存储 -128 ~ 127之间的数字
