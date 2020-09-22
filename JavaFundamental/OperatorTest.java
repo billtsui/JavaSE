@@ -61,5 +61,22 @@ public class OperatorTest {
          //先自增再使用，这里打印12
          System.out.println(++ic); 
 
+         /**
+          * 逻辑运算符
+          * && || !
+          * && 与 || 是短路运算符，只要第一个表达式有明确结果，就可以计算整个表达式的结果
+          */
+
+          boolean b1 = true;
+          boolean b2 = false;
+          System.out.println("b1 = " + b1);
+          System.out.println("b2 = " + b2);
+
+          System.out.println("b1 && b2 ="+ (b1 && b2));
+          System.out.println("b1 || b2 ="+ (b1 || b2));
+          System.out.println("!b1 = " + !b1);
+          System.out.println("!b2 = " + !b2);
+
+
     }
 }
