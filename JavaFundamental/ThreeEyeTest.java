@@ -8,7 +8,7 @@ public class ThreeEyeTest {
         Scanner sc = new Scanner(System.in);
         int ia = sc.nextInt();
         int ib = sc.nextInt();
-
+        sc.close();
         int max = ia > ib ? ia : ib;
         System.out.println("最大值是:" + max);
     }
