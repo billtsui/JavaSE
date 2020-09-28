@@ -2,6 +2,9 @@ package JavaFundamental.Exercise1;
 
 import java.util.Random;
 
+/**
+ * 双色球
+ */
 public class DoubleColor {
     public static void main(String[] args) {
         generateNums();

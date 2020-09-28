@@ -3,6 +3,9 @@ package JavaFundamental.Exercise1;
 import java.util.Calendar;
 import java.util.Scanner;
 
+/**
+ * 获取某天是该年中的第几天
+ */
 public class GetDayofYear {
     public static void main(String[] args) {
         System.out.println("请输入年月日，以YYYYMMDD形式，例如20080812");

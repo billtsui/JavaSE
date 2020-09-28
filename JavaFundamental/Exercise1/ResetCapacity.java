@@ -3,6 +3,9 @@ package JavaFundamental.Exercise1;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 数组扩容
+ */
 public class ResetCapacity {
     public static void main(String[] args) {
         int[] array = new int[10];
