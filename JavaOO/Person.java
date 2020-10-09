@@ -4,6 +4,19 @@ public class Person {
     String name;
     int age;
 
+    /* 构造方法
+     * 如果不声明，编译器会有一个默认的构造方法
+     */
+    Person() {
+        System.out.println("我是自定义构造方法！");
+    }
+
+    //有参构造方法
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     void setName(String s) {
         this.name = s;
     }
@@ -12,11 +25,11 @@ public class Person {
         this.age = a;
     }
 
-    String getName(){
+    String getName() {
         return this.name;
     }
 
-    int getAge(){
+    int getAge() {
         return this.age;
     }
 
@@ -28,16 +41,12 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        
-        Person p = new Person();
-        p.name = "Bill Tsui";
-        p.age = 31;
+
+        Person p = new Person("Bill Tsui",31);
         System.out.println(p.name);
         System.out.println(p.age);
 
-        Person p1 = new Person();
-        p1.setAge(30);
-        p1.setName("关羽");
+        Person p1 = new Person("关羽",30);
         System.out.println(p1.getName());
         System.out.println(p1.getAge());
 
