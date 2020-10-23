@@ -22,9 +22,11 @@ public class AllInOne {
         p2.show();
 
         StaticBlock staticBlock0 = new StaticBlock();
-
-        StaticBlock staticBlock = new StaticBlock();
-
         StaticBlock staticBlock1 = new StaticBlock();
+        StaticBlock staticBlock2 = new StaticBlock();
+
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+        System.out.println(singleton1 == singleton2);
     }
 }
