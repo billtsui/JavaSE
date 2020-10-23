@@ -20,5 +20,11 @@ public class AllInOne {
 
         People p2 = new People("曹操","魏国",40);
         p2.show();
+
+        StaticBlock staticBlock0 = new StaticBlock();
+
+        StaticBlock staticBlock = new StaticBlock();
+
+        StaticBlock staticBlock1 = new StaticBlock();
     }
 }
