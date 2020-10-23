@@ -12,8 +12,13 @@ public class AllInOne {
         s.setName("张飞");
         s.show();
 
-        Student s1 = new Student(-1000,"关云长");
+        Student s1 = new Student(-1000, "关云长");
         s1.show();
 
+        People p1 = new People("刘备", "蜀国", 35);
+        p1.show();
+
+        People p2 = new People("曹操","魏国",40);
+        p2.show();
     }
 }
