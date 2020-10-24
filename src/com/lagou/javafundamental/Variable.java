@@ -1,4 +1,4 @@
-package JavaFundamental;
+package com.lagou.javafundamental;
 
 public class Variable {
     /**
