@@ -23,7 +23,7 @@ public interface Hunter extends Runner {
         System.out.println("这里是静态方法，可以直接通过接口名.的方式调用");
     }
 
-    private default void base(){
+    public default void base(){
         System.out.println("1.9以后接口可以有private方法");
     }
 }
