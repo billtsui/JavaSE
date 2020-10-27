@@ -1,4 +1,4 @@
-package com.lagou.javafundamental.Exercise1;
+package com.lagou.javafundamental.exercise;
 
 /**
  * 打印1000以内所有完数

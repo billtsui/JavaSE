@@ -1,4 +1,4 @@
-package com.lagou.javafundamental.Exercise1;
+package com.lagou.javafundamental.exercise;
 
 import java.util.Random;
 
