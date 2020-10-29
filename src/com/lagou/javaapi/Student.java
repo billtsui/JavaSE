@@ -1,5 +1,7 @@
 package com.lagou.javaapi;
 
+import java.util.Objects;
+
 /**
  * @author billtsui
  * @date 2020/10/28
@@ -37,24 +39,24 @@ public class Student {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (null == obj) {
-            return false;
-        }
-        if (obj instanceof Student) {
-            Student st = (Student) obj;
-            return this.getId() == st.getId();
-        } else {
-            return false;
-        }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return id == student.id &&
+                Objects.equals(name, student.name);
     }
 
     @Override
     public int hashCode() {
-        int type = 12;
-        return type * 31 + this.getId();
+        return Objects.hash(id, name);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
