@@ -21,5 +21,9 @@ public class StringMethodTest {
         System.out.println(Arrays.toString(str1.toCharArray()));
         String str4 = new String(str1.toCharArray());
         System.out.println("转回字符串为 str4 = " + str4);
+
+        System.out.println("字符串的长度是：" + str1.length());
+        System.out.println("下标为0的字符是：" + str1.charAt(0));
+        System.out.println(str1.isEmpty() ? "字符串为空" : "字符串不为空");
     }
 }
