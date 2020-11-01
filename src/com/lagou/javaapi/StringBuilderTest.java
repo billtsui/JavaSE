@@ -55,8 +55,13 @@ public class StringBuilderTest {
         sb3.delete(0, 3);
         System.out.println("sb3 = " + sb3);
 
-        sb3.delete(11,15);
+        sb3.delete(11, 15);
         System.out.println("sb3 = " + sb3);
+
+        sb3.setCharAt(0, 'A');
+        System.out.println("sb3 = " + sb3);
+
+        System.out.println("sb3 = " + sb3.reverse());
 
     }
 }
