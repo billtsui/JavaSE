@@ -1,5 +1,6 @@
 package person.billtsui.feature;
 
+import java.lang.reflect.Parameter;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -17,6 +18,8 @@ public class FunctionalInterfaceTest {
             }
         };
 
+        Runnable runnable1 = () -> System.out.println("lambda表达式");
+
         runnable.run();
 
         System.out.println("---------------------------------------------");
@@ -25,13 +28,19 @@ public class FunctionalInterfaceTest {
             @Override
             public void accept(Object o) {
                 System.out.println("有参但没有返回值的方法");
-                if(o instanceof  String){
-                    System.out.println((String)o);
+                if (o instanceof String) {
+                    System.out.println((String) o);
                 }
             }
         };
         consumer.accept("Test");
 
+        Consumer consumer1 = (para) -> {
+            System.out.println(para);
+        };
+        Consumer consumer2 = o -> {
+            System.out.println(o);
+        };
         System.out.println("---------------------------------------------");
 
         Supplier supplier = new Supplier() {
@@ -42,6 +51,10 @@ public class FunctionalInterfaceTest {
         };
 
         System.out.println(supplier.get());
+
+        Supplier supplier1 = () -> {
+            return false;
+        };
 
         System.out.println("---------------------------------------------");
 
