@@ -17,7 +17,7 @@ public class CollectionTest {
         //这两行代码编译OK，运行时会报UnsupportedOperationException
         integers.add(6);
         integerSet.add(9);
-        
+
         System.out.println(integers);
     }
 }
